@@ -6,6 +6,8 @@
     <title>3D Cross-Section Viewer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
 
 </head>
 <body>
@@ -18,11 +20,14 @@
         <aside class="menu">
             <h2>立体の種類</h2>
             <ul>
-                <li><button id="cube">立方体</button></li>
-                <li><button id="cylinder">円柱</button></li>
-                <li><button id="sphere">球</button></li>
+            
+                <li><button id="selectCube">立方体</button></li>
+                <li><button id="selectCylinder">円柱</button></li>
+                <li><button id="selectSphere">球</button></li>
                 <!-- 他の立体のボタンも追加 -->
             </ul>
+                
+                
         </aside>
 
         <main class="canvas-area">
