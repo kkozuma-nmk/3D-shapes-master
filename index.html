@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cross-Section Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>3D Cross-Section Viewer</h1>
+        <p>立体の断面を表示するアプリケーション</p>
+    </header>
+
+    <div class="container">
+        <aside class="menu">
+            <h2>立体の種類</h2>
+            <ul>
+                <li><button id="cube">立方体</button></li>
+                <li><button id="cylinder">円柱</button></li>
+                <li><button id="sphere">球</button></li>
+                <!-- 他の立体のボタンも追加 -->
+            </ul>
+        </aside>
+
+        <main class="canvas-area">
+            <canvas id="mainCanvas"></canvas>
+        </main>
+
+        <aside class="control-panel">
+            <h2>操作コントロール</h2>
+            <!-- 操作用のボタンやスライダーを追加 -->
+        </aside>
+    </div>
+
+    <footer>
+        <p>断面図の表示エリア</p>
+        <canvas id="crossSectionCanvas"></canvas>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
